@@ -9,7 +9,7 @@ class UnoPlayer
 {
 private:
 	string name;
-	OrderedList<shared_ptr<Card>> hand;
+	OrderedList<shared_ptr<Card>,IsLessDeref> hand;
 	int amount_of_card = 0;
 public:
 	UnoPlayer();
